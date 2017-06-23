@@ -15,9 +15,9 @@ public interface Client {
     @GET("api/v5/jee-main/practice/{subject}/")
         Call<JSONResponse> getJSON(@Path("subject")String subject);
 
-    @GET("api/v5/jee-main/practice/physics/units-and-dimensions/")
-    Call<JSONResponse> getJSON2();
-
+    //@GET("api/v5/jee-main/practice/physics/units-and-dimensions/")
+    @GET("api/v5/jee-main/practice/{subject}/{chapter}/")
+    Call<JSONResponse2> getJSON2(@Path("subject")String subject,@Path("chapter")String chapter);
 
 
     }
