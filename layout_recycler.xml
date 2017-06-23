@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="70dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/txtSub"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/txtSub"
+                android:layout_marginEnd="255dp"
+                android:layout_marginRight="255dp"
+                android:src="@drawable/img_atom" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical"><![CDATA[
+
+                />
+
+            ]]></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSub"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="Android Name"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

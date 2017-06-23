@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:layout_weight="1"
+       android:id="@+id/frameLayout">X
+
+   </FrameLayout>
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="420dp"
+    tools:context="com.example.hp.dynmapp.NewFragment"
+    android:layout_marginTop="66dp"
+    android:id="@+id/frameLayout2"
+    android:layout_below="@+id/frameLayout"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_marginTop="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello  user,\n What would you like to learn today ?"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="369dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:src="@drawable/img_toppr"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+</RelativeLayout>
